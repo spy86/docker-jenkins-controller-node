@@ -19,3 +19,4 @@ timestamper
 workflow-aggregator
 ansible
 permissive-script-security
+authorize-project

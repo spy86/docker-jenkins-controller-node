@@ -25,6 +25,7 @@
 | workflow-aggregator        | Latest  |
 | ansible                    | Latest  |
 | permissive-script-security | Latest  |
+|authorize-project           | Latest  |
 
 
 # How to use
