@@ -25,7 +25,9 @@
 | workflow-aggregator        | Latest  |
 | ansible                    | Latest  |
 | permissive-script-security | Latest  |
-|authorize-project           | Latest  |
+| authorize-project          | Latest  |
+| role-strategy              | Latest  |
+| matrix-auth                | Latest  |
 
 
 # How to use
