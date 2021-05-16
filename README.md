@@ -33,12 +33,12 @@
 # How to use
 ### Basic usage
 ```shell
-docker run -p 8080:8080 -p 50000:50000 spy86/jenkins-master-node:latest
+docker run -p 8080:8080 -p 50000:50000 spy86/docker-jenkins-controller-node:latest
 ```
 
 ### Jenkins with persistent volume (recommended)
 ```shell
-docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home spy86/jenkins-master-node:latest
+docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home spy86/docker-jenkins-controller-node:latest
 ```
 
 ### Example docker-compose
@@ -46,8 +46,8 @@ docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home spy86/jen
 ```yaml 
 version: '3'
 services:
-  jenkins-master:
-    image: spy86/jenkins-master-node:latest
+  jenkins-controller-node:
+    image: spy86/docker-jenkins-controller-node:latest
     volumes:
       - /opt/jenkins_home:/var/jenkins_home
     ports:
