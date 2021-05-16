@@ -9,7 +9,7 @@ script:
 
 after_success:
   - docker login --username $DOCKER_USER --password $DOCKER_PASS
-  - if [[ $TRAVIS_BRANCH = master ]]; then docker push $DOCKER_REPO_SLUG:latest; else true; fi
+  - if [[ $TRAVIS_BRANCH = main ]]; then docker push $DOCKER_REPO_SLUG:latest; else true; fi
   - if [[ $TRAVIS_TAG = $TRAVIS_BRANCH ]]; then docker push $DOCKER_REPO_SLUG:$TRAVIS_TAG; else true ; fi
   
 notifications:
