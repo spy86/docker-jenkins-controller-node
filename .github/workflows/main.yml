@@ -10,6 +10,8 @@ on:
 jobs:
   docker:
     runs-on: ubuntu-latest
+    env:
+      TAG: $(date +%Y%m%d)
     steps:
       -
         name: Set up QEMU
@@ -29,7 +31,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: spy86/docker-jenkins-controller-node:$(date +%Y%m%d)
+          tags: spy86/docker-jenkins-controller-node:${{ env.TAG }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
