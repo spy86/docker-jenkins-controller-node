@@ -1,5 +1,5 @@
 # Jenkins Continuous Integration and Delivery server.
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![ci](https://github.com/spy86/docker-jenkins-controller-node/actions/workflows/main.yml/badge.svg)](https://github.com/spy86/docker-jenkins-controller-node/actions/workflows/main.yml)
+[![docker-jenkins-controller-node](https://img.shields.io/badge/spy86-jenkins_controller_node-blue.svg)](https://cloud.docker.com/repository/docker/spy86/jenkins-controller-node) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## List installed plugins      
 
 | Name                       | Version |
